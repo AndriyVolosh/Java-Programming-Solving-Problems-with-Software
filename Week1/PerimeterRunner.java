@@ -64,15 +64,15 @@ public class PerimeterRunner {
         double largestX = 0;
         // For each point currPt in the shape
         for (Point currPt : s.getPoints()) {
-            // Find distance from prevPt point to currPt 
+            // Find X from currPt 
             double currX = currPt.getX();
             // if statement
             if (largestX < currX){
-            // Update largestSide by currDist
+            // Update largestX by currX
             largestX = currX;
             }
         }
-        // largestSide is the answer
+        // largestX is the answer
         return largestX;
     }
 
